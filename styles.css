@@ -613,6 +613,88 @@ img {
     font-size: 0.9rem;
 }
 
+/* ===== STUDY GUIDES ===== */
+.study-guides {
+    padding: 100px 0;
+    background: var(--bg-white);
+}
+
+.study-guides-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.study-guide-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+    background: var(--bg-light);
+    border-radius: var(--radius);
+    border: 1px solid #e8e8e8;
+    transition: var(--transition);
+    text-decoration: none;
+    color: inherit;
+}
+
+.study-guide-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--primary);
+}
+
+.study-guide-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgba(13, 158, 113, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    transition: var(--transition);
+}
+
+.study-guide-card:hover .study-guide-icon {
+    background: var(--primary);
+}
+
+.study-guide-icon i {
+    font-size: 1.5rem;
+    color: var(--primary);
+    transition: var(--transition);
+}
+
+.study-guide-card:hover .study-guide-icon i {
+    color: #fff;
+}
+
+.study-guide-card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--secondary);
+}
+
+.study-guide-card p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.study-guide-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    background: rgba(13, 158, 113, 0.1);
+    color: var(--primary);
+    font-size: 0.75rem;
+    font-weight: 500;
+    border-radius: 20px;
+}
+
 /* ===== EXPERIENCE ===== */
 .experience {
     padding: 100px 0;
@@ -998,6 +1080,10 @@ img {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .study-guides-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .stats-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 40px;
@@ -1060,6 +1146,10 @@ img {
     }
 
     .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .study-guides-grid {
         grid-template-columns: 1fr;
     }
 
